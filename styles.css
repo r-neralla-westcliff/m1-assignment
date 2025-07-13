@@ -74,6 +74,10 @@
         margin: 0;
         margin-left: 35px;
     }
+    
+    main h3 {
+        margin-left: 35px;
+    }
 
     main p {
         margin-left: 35px;
@@ -155,6 +159,13 @@
         font-weight: bold;
     }
 
+ .about section table {
+    margin-bottom: 13.7em;
+ }
+
+ .about section table td {
+    height: 40px;
+ }
 
     footer {
         width: 100%;
