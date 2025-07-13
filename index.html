@@ -3,6 +3,8 @@
 
 <head>
     <title>Adopt A Pet - Home</title>
+    <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
 </head>
 
@@ -12,10 +14,12 @@
 
         <header>
             <h1>Welcome to Adopt A Pet!</h1>
-            <nav>
-                <a href="index.html">Home</a> |
-                <a href="adopt.html">Adopt</a> |
-                <a href="about.html">About Us</a>
+            <nav class="main-menu">
+                <ul>
+                    <li class="active"> <a href="index.html">Home</a> </li>
+                    <li> <a href="adopt.html">Adopt</a></li>
+                    <li> <a href="about.html">About Us</a></li>
+                </ul>
             </nav>
         </header>
 
@@ -24,29 +28,66 @@
             <p>We help connect loving animals with loving homes. Whether you're looking for a puppy, kitten, or senior
                 pet — we’re here to help!</p>
 
-            <img src="images/dog.png" alt="Cute dog" width="300">
-            <img src="images/cat.avif" alt="Cute cat" width="300">
+            <div class="gallary">
+                <div class="pet">
+                    <img src="images/dog.png" alt="Cute dog" width="300">
+                    <div>
+                        <h2>Bella</h2>
+                        <p>Male dog</p>
+                        <p>Dallas, TX</p>
+                    </div>
+                </div>
+                <div class="pet">
+                    <img src="images/cat.avif" alt="Cute cat" width="300">
+                     <div>
+                        <h2>Milo</h2>
+                        <p>Female Cat </p>
+                        <p>Dallas, TX</p>
+                    </div>
+                </div>
+                 <div class="pet">
+                    <img src="images/cat2.jpg" alt="Cute cat" width="300">
+                     <div>
+                        <h2>Timmy</h2>
+                        <p>Male Cat </p>
+                        <p>Dallas, TX</p>
+                    </div>
+                </div>
+                 <div class="pet">
+                    <img src="images/dog 2.webp" alt="Cute cat" width="300">
+                     <div>
+                        <h2>Rambo</h2>
+                        <p>Female Dog </p>
+                        <p>Dallas, TX</p>
+                    </div>
+                </div>
+            </div>
 
-            <h3>Why Adopt?</h3>
+
+            <div class="adoptList">
+<h3>Why Adopt?</h3>
             <ul>
-                <li>Save a life</li>
-                <li>Reduce shelter crowding</li>
-                <li>Support ethical pet care</li>
+                <li>Save a life</li> |
+                <li>Reduce shelter crowding</li> |
+                <li>Support ethical pet care</li> | 
             </ul>
+            </div>
+            
         </main>
         <footer>
 
             <div id="nondisclaimer">
 
                 <div class="copy">
-                    &copy; Copyright 2020 :: GreatCliffs.com
+                    &copy; Copyright 2020 :: getPet.com
                 </div>
 
-                <div class="social">
-                    <h3>Facebook Image</h3>
-                    <h3>Instagram Image</h3>
-                    <h3>Twitter Image</h3>
+                  <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </div>
+
 
             </div>
 
