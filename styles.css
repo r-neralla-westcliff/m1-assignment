@@ -121,13 +121,46 @@
         margin: 0 5px 0 5px;
     }
 
+    /* Adopt */
+      table {
+        width: 1000px;
+        margin: 4em auto 6.7em auto;
+        border-spacing: inherit;
+    }
+
+    tbody {
+      
+        text-align: center;
+    }
+    th {
+        background: #285a85;
+    }
+    th,
+    td {
+        border: 1px solid white;
+        width: 225px;
+        vertical-align: middle;
+    }
+    td img {
+        border-radius: 50%;
+        width: 25%;
+    }
+
+    th:first-child {
+        width: 125px;
+        height: 50px;
+    }
+
+    td:first-child {
+        font-weight: bold;
+    }
+
 
     footer {
         width: 100%;
         height: 155px;
         padding-bottom: 1em;
         background-color: #88c2dd;
-        ;
     }
 
     footer #nondisclaimer .copy {
