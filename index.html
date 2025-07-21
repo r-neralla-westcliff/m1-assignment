@@ -4,7 +4,7 @@
 <head>
     <title>Adopt A Pet - Home</title>
     <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
 </head>
 
@@ -28,8 +28,8 @@
             <p>We help connect loving animals with loving homes. Whether you're looking for a puppy, kitten, or senior
                 pet — we’re here to help!</p>
 
-            <div class="gallary">
-                <div class="pet">
+            <div id="gallary">
+                <!-- <div class="pet">
                     <img src="images/dog.png" alt="Cute dog" width="300">
                     <div>
                         <h2>Bella</h2>
@@ -60,19 +60,19 @@
                         <p>Female Dog </p>
                         <p>Dallas, TX</p>
                     </div>
-                </div>
+                </div> -->
             </div>
 
 
             <div class="adoptList">
-<h3>Why Adopt?</h3>
-            <ul>
-                <li>Save a life</li> |
-                <li>Reduce shelter crowding</li> |
-                <li>Support ethical pet care</li> | 
-            </ul>
+                <h3>Why Adopt?</h3>
+                <ul>
+                    <li>Save a life</li> |
+                    <li>Reduce shelter crowding</li> |
+                    <li>Support ethical pet care</li> |
+                </ul>
             </div>
-            
+
         </main>
         <footer>
 
@@ -82,7 +82,7 @@
                     &copy; Copyright 2020 :: getPet.com
                 </div>
 
-                  <div class="social">
+                <div class="social">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
                     <a href="#" class="fa fa-twitter"></a>
@@ -101,6 +101,37 @@
         </footer>
 
     </div>
+    <script>
+        let gallary = "";
+        var dogs = [
+            { image: "dog1.jpg", name: "Bella", state: "Dallas, TX", desc: "Friendly Golden Retriever who loves playing fetch." },
+            { image: "dog2.jpg", name: "Max", state: "Austin, TX", desc: "Energetic German Shepherd, perfect for active families." },
+            { image: "dog3.jpg", name: "Charlie", state: "Houston, TX", desc: "Calm and affectionate Labrador who loves cuddles." },
+            { image: "dog4.jpg", name: "Rex", state: "San Antonio, TX", desc: "Brave and loyal Rottweiler, great for home security." },
+            { image: "dog5.jpg", name: "Luna", state: "Plano, TX", desc: "Playful Beagle who enjoys long walks and treats." }
+        ];
+        var cats = [
+            { image: "cat1.jpg", name: "Milo", state: "Dallas, TX", desc: "Curious Siamese who loves exploring new corners." },
+            { image: "cat2.jpg", name: "Chloe", state: "Austin, TX", desc: "Graceful Persian cat with a love for naps." },
+            { image: "cat3.jpg", name: "Oliver", state: "Houston, TX", desc: "Adorable Maine Coon who enjoys gentle petting." },
+            { image: "cat4.jpg", name: "Lily", state: "San Antonio, TX", desc: "Quiet and loving Ragdoll cat, perfect lap companion." },
+            { image: "cat5.jpg", name: "Simba", state: "Plano, TX", desc: "Playful Bengal kitten full of energy and charm." }
+        ];
+        var pets = dogs.concat(cats);
+        for (var i = 0; i < pets.length; i++) {
+            gallary += `
+            <div class="pet">
+                <img src="images/${pets[i].image}" alt="Cute ${pets[i].name}" width="300">
+                <div>
+                    <div class="overlay">${pets[i].desc}</div>
+                    <h2>${pets[i].name}</h2> 
+                    <p>${pets[i].state}</p> 
+                </div>
+            </div>
+        `;
+        }
+        document.getElementById("gallary").innerHTML = gallary;
+    </script>
 </body>
 
 </html>

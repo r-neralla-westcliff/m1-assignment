@@ -74,7 +74,7 @@
         margin: 0;
         margin-left: 35px;
     }
-    
+
     main h3 {
         margin-left: 35px;
     }
@@ -85,28 +85,57 @@
 
     }
 
-    .gallary {
+    #gallary {
         display: flex;
         gap: 10px;
         justify-content: center;
+        flex-wrap: wrap;
 
     }
 
-    .gallary p {
+    #gallary p {
         font-weight: bold;
         margin: 5px 0 5px 35px;
         font-style: italic;
+        flex-wrap: wrap;
     }
 
-    .gallary .pet {
+    #gallary .pet {
         box-shadow: 0 .25rem .625rem 0 hsla(0, 0%, 42%, .19);
         border-radius: 15px;
+        position: relative;
     }
 
-    .gallary .pet img {
+    #gallary .pet img {
         border-radius: 15px;
+        object-fit: cover;
+        height: 300px;
+        width: 300px;
+        cursor: pointer;
     }
 
+    #gallary .overlay {
+        position: absolute;
+        bottom: 173px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        width: 77%;
+        text-align: center;
+        padding: 8px;
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        border-radius: 0 0 5px 5px;
+        margin: auto;
+    }
+
+    #gallary :hover .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
 
     .adoptList {
         margin-left: 35px;
@@ -126,25 +155,28 @@
     }
 
     /* Adopt */
-      table {
+    table {
         width: 1000px;
         margin: 4em auto 6.7em auto;
         border-spacing: inherit;
     }
 
     tbody {
-      
+
         text-align: center;
     }
+
     th {
         background: #285a85;
     }
+
     th,
     td {
         border: 1px solid white;
         width: 225px;
         vertical-align: middle;
     }
+
     td img {
         border-radius: 50%;
         width: 25%;
@@ -159,13 +191,13 @@
         font-weight: bold;
     }
 
- .about section table {
-    margin-bottom: 13.7em;
- }
+    .about section table {
+        margin-bottom: 13.7em;
+    }
 
- .about section table td {
-    height: 40px;
- }
+    .about section table td {
+        height: 40px;
+    }
 
     footer {
         width: 100%;
